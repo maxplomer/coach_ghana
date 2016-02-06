@@ -400,8 +400,6 @@ body {
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
 
 
-<hr style="border-top: 1px solid rgb(212,212,212);margin-top:100px;">
-
 <div style="width:1050px;margin:auto;font-size:24px;margin-bottom:30px;padding-top:20px;">
   <i class="fa fa-facebook" style="color:rgb(45,69,137);cursor:pointer;"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-twitter" style="color:rgb(72,156,232);cursor:pointer;"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-instagram" style="color:rgb(15,67,119);cursor:pointer;"></i>
 
@@ -451,7 +449,7 @@ if (document.getElementById('map-canvas')){
         scrollwheel: false,
         zoom: 7,
         center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     };
  
     // Attach a map to the DOM Element, with the defined settings
