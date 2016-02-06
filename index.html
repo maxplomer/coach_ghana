@@ -333,6 +333,14 @@ body {
     }
 
 
+/* map */
+
+#map-canvas{
+  height: 500px;
+  width: 100%;
+  border: 0px solid black;
+}
+
 </style>
 </head>
 <body style="margin:0;">
@@ -387,6 +395,11 @@ body {
 </div>
 
 
+
+<div id="map-canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+
+
 <hr style="border-top: 1px solid rgb(212,212,212);margin-top:100px;">
 
 <div style="width:1050px;margin:auto;font-size:24px;margin-bottom:30px;padding-top:20px;">
@@ -409,22 +422,44 @@ body {
 
 <script language='JavaScript'>
 // Insert JavaScript here
-$( document ).ready(function() {
 
   
-  setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
-  }, 2000);
+setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
+}, 2000);
 
-  setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
-  }, 1500);
+setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
+}, 1500);
 
 
-  setTimeout(function(){ $( "#little-title" ).fadeTo( "slow", 1 );
-  }, 2100);
+setTimeout(function(){ $( "#little-title" ).fadeTo( "slow", 1 );
+}, 2100);
 
-  setTimeout(function(){ $( "#big-picture" ).fadeTo( "slow", 1 );
-  }, 3100);
-});
+setTimeout(function(){ $( "#big-picture" ).fadeTo( "slow", 1 );
+}, 3100);
+
+
+
+
+// if HTML DOM Element that contains the map is found...
+if (document.getElementById('map-canvas')){
+ 
+    // Coordinates to center the map
+    var myLatlng = new google.maps.LatLng(7.0,-1.5);
+ 
+    // Other options for the map, pretty much selfexplanatory
+    var mapOptions = {
+        zoom: 7,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+ 
+    // Attach a map to the DOM Element, with the defined settings
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+}
+
+
+
 </script>
 </body>
 </html>
