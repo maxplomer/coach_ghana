@@ -301,7 +301,36 @@ body {
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
+/* bottom right buttons */
 
+    a.button{
+        background: #ECECEC;
+        border-radius: 15px;
+        padding: 10px 20px;
+        display: block;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 14px;
+        color:#7f7f7f;
+        text-decoration: none;
+        text-shadow:0px 1px 0px #fff;
+        border:1px solid #a7a7a7;
+        width: 105px;
+        margin:0px auto;
+        box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition:box-shadow 0.5s;
+    }
+    a.button i{
+        float: right;
+        margin-top: 2px;
+    }
+    a.button:hover{
+        box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+    }
+    a.button:active{
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+        background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+    }
 
 
 </style>
@@ -363,9 +392,10 @@ body {
 <div style="width:1050px;margin:auto;font-size:24px;margin-bottom:30px;padding-top:20px;">
   <i class="fa fa-facebook" style="color:rgb(45,69,137);cursor:pointer;"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-twitter" style="color:rgb(72,156,232);cursor:pointer;"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-instagram" style="color:rgb(15,67,119);cursor:pointer;"></i>
 
-  <div style="width:100px;height:50px;border:1px solid yellow;float:right;">
-
-
+  <div style="width:400px;height:50px;float:right;">
+    <a class="button" style="float:right;margin-left:30px;cursor:pointer;">Apply Now <i class="fa fa-chevron-right"></i></a>
+    <a class="button" style="float:right;cursor:pointer;">Contact Us <i class="fa fa-chevron-right"></i></a>
+ 
   </div>
 
   <div style="font-size:12px;color:rgb(173,173,173);text-align:center;margin-top:40px;">
