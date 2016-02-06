@@ -5,11 +5,18 @@
 <style>
 /* Insert CSS here */
 
+@font-face { font-family: OpenSans; src: url('/fonts/OpenSans-Regular.ttf'); } 
+@font-face { font-family: OpenSans; font-weight: bold; src: url('/fonts/OpenSans-Bold.ttf'); } 
+
+/* --- RESET --- */
 
 
 
+/* --- ELEMENTS --- */
 
-
+body {
+  font-family: OpenSans;
+}
 
 .animation-target {
   -webkit-animation: animation 1800ms linear both;
@@ -182,6 +189,7 @@
 .animation-target3 {
   -webkit-animation: animation2 3500ms linear both;
   animation: animation2 3500ms linear both;
+  font-family: OpenSans !important;
 }
 
 
