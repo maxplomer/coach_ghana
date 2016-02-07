@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box; }
 
+*, *::after, *::before {
+  box-sizing: inherit; }
 
 /*# sourceMappingURL=my_project_styles.css.map */
