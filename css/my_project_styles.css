@@ -24,4 +24,53 @@ form, label {
     content: "";
     display: table; }
 
+.image-gradient-dynamic {
+  line-height: 0;
+  position: relative;
+  width: 100%; }
+  .image-gradient-dynamic img {
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%; }
+  .image-gradient-dynamic .copy {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 999; }
+    .image-gradient-dynamic .copy p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative; }
+  .image-gradient-dynamic .overlay {
+    background-color: rgba(255, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(-270deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+    background-image: linear-gradient(0deg,rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .image-gradient-dynamic .overlay:after {
+      background-color: rgba(0, 128, 128, 0.2);
+      background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+      background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      content: '';
+      display: block; }
+
 /*# sourceMappingURL=my_project_styles.css.map */
