@@ -17,8 +17,7 @@ form, label {
 .my-container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  border: 1px solid yellow; }
+  margin-right: auto; }
   .my-container::after {
     clear: both;
     content: "";

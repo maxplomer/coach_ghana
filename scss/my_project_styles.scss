@@ -15,7 +15,6 @@ form, label {
 
 .my-container{
   @include outer-container();
-  border:1px solid yellow;
 }
 
 .image-gradient-dynamic {
