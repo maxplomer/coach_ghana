@@ -14,6 +14,9 @@ form, label {
   vertical-align: baseline;
   font: inherit; }
 
+body {
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif; }
+
 .my-container {
   max-width: 68em;
   margin-left: auto;

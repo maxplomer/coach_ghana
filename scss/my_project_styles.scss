@@ -13,6 +13,10 @@ form, label {
   font: inherit;
 }
 
+body {
+  font-family: $lucida-grande;
+}
+
 .my-container{
   @include outer-container();
   border:1px solid yellow;
