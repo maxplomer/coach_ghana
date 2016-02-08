@@ -14,6 +14,13 @@ body {
   font-family: OpenSans;
 }
 
+#map-canvas{
+  border: 0px solid black;
+  height: 500px;
+  margin-top: 50px;
+  width: 100%;
+}
+
 .section-title {
   background-color: white;
   font-size: 24px;
@@ -77,9 +84,31 @@ body {
   </div>
 </div>
 
+<div id="map-canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+
+
+
 <script language='JavaScript'>
 // Insert JavaScript here
+$( document ).ready(function() {
+  // if HTML DOM Element that contains the map is found...
+  if (document.getElementById('map-canvas')){
+    // Coordinates to center the map
+    var myLatlng = new google.maps.LatLng(7.0,-1.5);
 
+    // Other options for the map, pretty much selfexplanatory
+    var mapOptions = {
+        scrollwheel: false,
+        zoom: 7,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    // Attach a map to the DOM Element, with the defined settings
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  }
+});
 </script>
 </body>
 </html>
