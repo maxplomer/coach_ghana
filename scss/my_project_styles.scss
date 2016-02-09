@@ -17,11 +17,6 @@ form, label {
   @include outer-container();
 }
 
-.second-section-picture {
-  @include span-columns(6);
-  @include shift(3);
-}
-
 .image-gradient-dynamic {
   $image-gradient-color-top: red; 
   $transparency-top: 0.9;
@@ -172,7 +167,7 @@ form, label {
   }
 
   .images-wrapper {
-    @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('../1.jpg'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
