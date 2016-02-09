@@ -200,7 +200,7 @@ body {
   </div>
 </div>
 
-<div class="my-container fade-in-element" id="js-fadeInElement">
+<div class="my-container fade-in-element" id="js-fadeInElement2">
   <div class="section-title-div">
     <span class="section-title">Immerse. Thrive</span>
   </div>
@@ -318,6 +318,31 @@ $( document ).ready(function() {
       }
     }
   });
+
+
+
+  var element2 = document.getElementById("js-fadeInElement2");
+  $(element2).addClass('js-fade-element-hide');
+
+  $(window).scroll(function() {
+    if( $("#js-fadeInElement2").length > 0 ) {
+      var element2TopToPageTop = $(element2).offset().top;
+      var windowTopToPageTop = $(window).scrollTop();
+      var windowInnerHeight = window.innerHeight;
+      var element2TopToWindowTop = element2TopToPageTop - windowTopToPageTop;
+      var element2TopToWindowBottom = windowInnerHeight - element2TopToWindowTop;
+      var distanceFromBottomToAppear = 300;
+
+      if(element2TopToWindowBottom > distanceFromBottomToAppear) {
+        $(element2).addClass('js-fade-element-show');
+      }
+      else if(element2TopToWindowBottom < 0) {
+        $(element2).removeClass('js-fade-element-show');
+        $(element2).addClass('js-fade-element-hide');
+      }
+    }
+  });
+
 
 });
 </script>
