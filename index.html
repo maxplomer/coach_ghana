@@ -150,12 +150,20 @@ body {
   </div>
 </div>
 
-<div class="animation-target" style="text-align:center;margin-top:30px;opacity:0.8;">
+<div class="animation-target" style="text-align:center;margin-top:20px;opacity:0.8;">
   <img src="soccer83.png">
 </div>
 
 <div id="big-title">
   Coach Ghana
+</div>
+
+<div id="second-section" style="margin-top:20px;text-align:center;opacity:0;background:rgb(243,112,46);color:white;padding-top:50px;font-size:60px; margin-left:0;border-top:1px solid rgb(228,45,32);border-bottom: 2px solid rgb(228,45,32);height:515px;">
+  <span style="text-shadow: 2px 2px #FF0000;">Experience the game, experience <br>Ghana</span>
+
+  <div style="text-align:center;padding-top:50px;">
+    <img id="big-picture" class="animation-target4" src="1.jpg" style="opacity:0;border-radius:8px;box-shadow: 0px 0px 3px rgb(150,150,150);">
+  </div>
 </div>
 
 <div class="my-container">
@@ -264,6 +272,8 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
   }, 2000);
 
+  setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
+  }, 2200);
 
 });
 </script>
