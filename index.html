@@ -21,6 +21,10 @@ body {
   width: 100%;
 }
 
+.menu-link:hover {
+  color: grey;
+}
+
 .section-title {
   background-color: white;
   font-size: 24px;
@@ -124,8 +128,8 @@ body {
 </head>
 <body>
 <!-- Insert HTML here -->
-<div id="top-right-menu" class="animation-target5" style="background:rgb(73,75,80);opacity:0;">
-  <div style="text-align:right;width:1000px;margin:auto;color:white;font-size:16px;padding:13px 0;">
+<div id="top-right-menu" style="background:rgb(73,75,80);opacity:0;">
+  <div class="my-container" style="text-align:right;color:white;font-size:16px;padding:13px 0;">
     <span class="menu-link" style="cursor:pointer;">About Us</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="menu-link" style="cursor:pointer;">Program Fees</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="menu-link" style="cursor:pointer;">Apply Now</span>
   </div>
 </div>
@@ -134,7 +138,7 @@ body {
   <div class="animation-target" style="width:77px;text-align:center;margin:auto;margin-top:20px;opacity:0.8;">
     <img src="soccer83.png">
   </div>
-  <div id="big-title" class="animation-target2" style="margin:auto;text-align:center;opacity:0;width:336px;">
+  <div id="big-title" style="margin:auto;text-align:center;opacity:0;width:336px;">
     <span style="font-size:55px;color:rgb(228,35,19);font-weight:lighter;letter-spacing: -3px;">Coach Ghana</span>
   </div>
 </div>
@@ -245,7 +249,7 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
   }, 2000);
 
-  
+
 });
 </script>
 </body>
