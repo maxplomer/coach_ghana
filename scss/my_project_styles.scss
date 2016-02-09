@@ -76,7 +76,7 @@ form, label {
 
 .footer {
   $base-spacing: 1.5em !default;
-  $action-color: rgb(164,198,255) !default;
+  $action-color: rgb(179,209,255) !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
