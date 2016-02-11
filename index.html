@@ -284,7 +284,7 @@ body {
 </footer>
 
 <div>
-  <button onclick="send_test_email();">test email code</button>
+  <button onclick="window.send_test_email();">test email code</button>
 </div>
 
 <div class="modal">
@@ -340,7 +340,7 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
   }, 2200);
 
-  function send_test_email() {
+  var window.send_test_email = function() {
     $.ajax({
       type: 'POST',
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
