@@ -340,7 +340,7 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
   }, 2200);
 
-  var window.send_test_email = function() {
+  window.send_test_email = function() {
     $.ajax({
       type: 'POST',
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
