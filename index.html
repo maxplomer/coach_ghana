@@ -284,7 +284,8 @@ body {
 </footer>
 
 <div>
-  <button onclick="window.send_test_email();">test email code</button>
+  <button onclick="window.send_test_email('maxplomer@gmail.com');">send max a test email</button>
+  <button onclick="window.send_test_email('andrew.talty1990@gmail.com');">send andrew a test email</button>
 </div>
 
 <div class="modal">
@@ -340,7 +341,7 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
   }, 2200);
 
-  window.send_test_email = function() {
+  window.send_test_email = function(email_address) {
     $.ajax({
       type: 'POST',
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -350,7 +351,7 @@ $( document ).ready(function() {
           'from_email': 'testing@codesandbox.io',
           'to': [
               {
-                'email': 'maxplomer@gmail.com',
+                'email': email_address,
                 'name': 'Max',
                 'type': 'to'
               }
