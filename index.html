@@ -285,6 +285,12 @@ body {
 
 <script language='JavaScript'>
 // Insert JavaScript here
+
+//force page scroll position to top at page refresh
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
 $( document ).ready(function() {
   // if HTML DOM Element that contains the map is found...
   if (document.getElementById('map-canvas')){
