@@ -522,21 +522,41 @@ $( document ).ready(function() {
   });
 
   $('#contact-us-form').submit(function(e) {
-      e.preventDefault();
-      // Get all the forms elements and their values in one step
-      var values = $(this).serializeJSON();
-      console.log(values);
-      console.log(values["name"]);
-      $('#contact-us-form')[0].reset();
-      $('#close-contact-us-modal').trigger('click');
+    e.preventDefault();
+    // Get all the forms elements and their values in one step
+    var values = $(this).serializeJSON();
+    $('#contact-us-form')[0].reset();
+    $('#close-contact-us-modal').trigger('click');
 
-      alert('Your message has succesfully been sent!');
+    email_html = 'name: ' + values["name"] + '<br><br>email: ' + values["email"] + '<br><br>phone: ' +  values["phone"] + '<br><br>subject: ' + values["subject"] + '<br><br>message: ' + values["message"];
+
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
+        'message': {
+          'from_email': 'testing@codesandbox.io',
+          'to': [
+              {
+                'email': 'maxplomer@gmail.com',
+                'name': 'Max',
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': 'COACH GHANA contact us form',
+          'html': email_html
+        }
+      }
+    }).done(function(response) {
+     console.log(response); // if you're into that sorta thing
+    });
 
 
 
+    alert('Your message has succesfully been sent!');
   });
-
-
 });
 </script>
 </body>
