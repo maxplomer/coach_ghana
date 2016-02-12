@@ -23,6 +23,11 @@ body {
   text-align: center;
 }
 
+#contact-us-form > input {
+  padding: 5px;
+  width: 90%;
+}
+
 #initial-picture {
   opacity: 0;
   margin-top: 30px;
@@ -377,8 +382,25 @@ body {
     <div class="modal-inner" style="max-height:90%">
       <div class="modal-close" for="modal-4"></div>
       <h1>Contact Us</h1>
-      <h4>Develop your skillset while being a positive influence</h4>
-      <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
+      <form id="contact-us-form">
+        Your Name: (required)<br>
+        <input type="text" name="name" required>
+        <br><br>
+        Your email: (required)<br>
+        <input type="text" name="email" required>
+        <br><br>
+        Your Phone: (required)<br>
+        <input type="text" name="phone" required>
+        <br><br>
+        Subject<br>
+        <input type="text" name="subject">
+        <br><br>
+        Your Message<br>
+        <textarea name="message" rows="10" style="width:90%;"></textarea>
+        <br><br>
+        <button type="submit">Send</button>
+      </form>
+
     </div>
   </div>
 </div>
