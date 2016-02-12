@@ -178,7 +178,7 @@ body {
   <div class="my-container" style="text-align:right;color:white;font-size:16px;padding:13px 0;">
     <span class="menu-link" onclick="$('#about-us-modal').trigger('click');">About Us</span>
     <span class="menu-link" onclick="$('#program-fees-modal').trigger('click');">Program Fees</span>
-    <span class="menu-link">Apply Now</span>
+    <span class="menu-link" onclick="$('#apply-now-modal').trigger('click');">Apply Now</span>
   </div>
 </div>
 
@@ -254,8 +254,8 @@ body {
   <div class="footer-links">
     <ul>
       <li><h3>Become A Coach</h3></li>
-      <li><a href="javascript:void(0)">Apply Now</a></li>
-      <li><a href="javascript:void(0)">Contact Us</a></li>
+      <li><a href="javascript:void(0)" onclick="$('#apply-now-modal').trigger('click');">Apply Now</a></li>
+      <li><a href="javascript:void(0)" onclick="$('#contact-us-modal').trigger('click');">Contact Us</a></li>
     </ul>
     <ul>
       <li><h3>Follow Us</h3></li>
@@ -331,6 +331,36 @@ body {
         </ul>
       </div>
 
+    </div>
+  </div>
+</div>
+
+<div class="modal" style="height:0px;overflow:hidden;">
+  <label for="modal-3">
+    <div class="modal-trigger" id="apply-now-modal">Click for Modal</div>
+  </label>
+  <input class="modal-state" id="modal-3" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-3"></div>
+      <h1>Apply now</h1>
+      <h4>Develop your skillset while being a positive influence</h4>
+      <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" style="height:0px;overflow:hidden;">
+  <label for="modal-4">
+    <div class="modal-trigger" id="contact-us-modal">Click for Modal</div>
+  </label>
+  <input class="modal-state" id="modal-4" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-4"></div>
+      <h1>Contact Us</h1>
+      <h4>Develop your skillset while being a positive influence</h4>
+      <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
     </div>
   </div>
 </div>
