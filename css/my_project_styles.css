@@ -358,4 +358,18 @@ form, label {
     font-size: 0.7em;
     font-weight: normal; }
 
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative; }
+  .video-wrapper embed,
+  .video-wrapper object,
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%; }
+
 /*# sourceMappingURL=my_project_styles.css.map */
