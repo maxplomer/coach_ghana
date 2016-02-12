@@ -387,7 +387,7 @@ body {
         <input type="text" name="name" required>
         <br><br>
         Your email: (required)<br>
-        <input type="text" name="email" required>
+        <input type="email" name="email" required>
         <br><br>
         Your Phone: (required)<br>
         <input type="text" name="phone" required>
@@ -518,6 +518,13 @@ $( document ).ready(function() {
     $(".modal-inner").on("click", function(e) {
       e.stopPropagation();
     });
+  });
+
+  $('#contact-us-form').submit(function(e) {
+      e.preventDefault();
+      // Get all the forms elements and their values in one step
+      var values = $(this).serialize();
+
   });
 
 
