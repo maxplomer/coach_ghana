@@ -524,7 +524,7 @@ $( document ).ready(function() {
   $('#contact-us-form').submit(function(e) {
       e.preventDefault();
       // Get all the forms elements and their values in one step
-      var values = $(this).serialize();
+      var values = $(this).serializeJSON();
       console.log(values);
       console.log(values["name"]);
       $('#contact-us-form')[0].reset();
