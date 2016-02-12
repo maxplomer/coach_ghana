@@ -23,15 +23,15 @@ body {
   text-align: center;
 }
 
-#initial-article {
+#initial-picture {
   opacity: 0;
-  color: black;
-  margin-top: 30px;
-  padding: 0 17px;
-  line-height: 1.5em;
 }
 
-#initial-article > h4 {
+#contact-us-modal > h1 {
+  font-size: 40px;
+}
+
+#contact-us-modal > h4 {
   background: #BBB;
   color: white;
   display: inline-block;
@@ -188,7 +188,7 @@ body {
   <div>Experience the game, experience Ghana</div>
 </div>
 
-<div class="my-container" id="initial-article">
+<div class="my-container" id="initial-picture">
   <center><img src="1.jpg" alt="" style="width:99%;opacity:0.9;"></center>
 </div>
 
@@ -286,11 +286,11 @@ body {
   </label>
   <input class="modal-state" id="modal-1" type="checkbox" />
   <div class="modal-fade-screen">
-    <div class="modal-inner">
+    <div class="modal-inner" id="contact-us-modal">
       <div class="modal-close" for="modal-1"></div>
-      <h1>Modal Title</h1>
-      <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
-      <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+      <h1>About Us</h1>
+      <h4>Develop your skillset while being a positive influence</h4>
+      <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
     </div>
   </div>
 </div>
@@ -327,7 +327,7 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
   }, 2000);
 
-  setTimeout(function(){ $( "#initial-article" ).fadeTo( "slow", 1 );
+  setTimeout(function(){ $( "#initial-picture" ).fadeTo( "slow", 1 );
   }, 2200);
 
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
