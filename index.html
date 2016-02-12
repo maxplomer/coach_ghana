@@ -380,7 +380,7 @@ body {
   <input class="modal-state" id="modal-4" type="checkbox" />
   <div class="modal-fade-screen" style="padding-top:40px;">
     <div class="modal-inner" style="max-height:90%">
-      <div class="modal-close" for="modal-4"></div>
+      <div id="close-contact-us-modal" class="modal-close" for="modal-4"></div>
       <h1>Contact Us</h1>
       <form id="contact-us-form">
         Your Name: (required)<br>
@@ -524,6 +524,11 @@ $( document ).ready(function() {
       e.preventDefault();
       // Get all the forms elements and their values in one step
       var values = $(this).serialize();
+      $('#contact-us-form')[0].reset();
+      $('#close-contact-us-modal').trigger('click');
+      alert('Your message has succesfully been sent!');
+
+
 
   });
 
