@@ -2,6 +2,7 @@
 <html>
 <head>
 <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.js'></script>
+<script type="text/javascript" src="jquery.serializejson.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/my_project_styles.css">
 <style>
@@ -524,8 +525,11 @@ $( document ).ready(function() {
       e.preventDefault();
       // Get all the forms elements and their values in one step
       var values = $(this).serialize();
+      console.log(values);
+      console.log(values["name"]);
       $('#contact-us-form')[0].reset();
       $('#close-contact-us-modal').trigger('click');
+
       alert('Your message has succesfully been sent!');
 
 
