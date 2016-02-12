@@ -29,11 +29,11 @@ body {
   padding: 0 17px;
 }
 
-#contact-us-modal > h1 {
+.modal-inner > h1 {
   font-size: 40px;
 }
 
-#contact-us-modal > h4 {
+.modal-inner > h4 {
   background: #BBB;
   color: white;
   display: inline-block;
@@ -41,6 +41,10 @@ body {
   margin-bottom: 30px;
   padding: 3px 8px;
   text-transform: uppercase;
+}
+
+.modal-inner > p {
+  margin-bottom: 15px;
 }
 
 #map-canvas {
@@ -173,7 +177,7 @@ body {
 <div id="top-right-menu" style="background:rgb(73,75,80);opacity:0;">
   <div class="my-container" style="text-align:right;color:white;font-size:16px;padding:13px 0;">
     <span class="menu-link" onclick="$('#about-us-modal').trigger('click');">About Us</span>
-    <span class="menu-link">Program Fees</span>
+    <span class="menu-link" onclick="$('#program-fees-modal').trigger('click');">Program Fees</span>
     <span class="menu-link">Apply Now</span>
   </div>
 </div>
@@ -282,17 +286,52 @@ body {
   <button onclick="window.send_test_email('andrew.talty1990@gmail.com');">send andrew a test email</button>
 </div>
 
-<div class="modal">
+<div class="modal" style="height:0px;overflow:hidden;">
   <label for="modal-1">
     <div class="modal-trigger" id="about-us-modal">Click for Modal</div>
   </label>
   <input class="modal-state" id="modal-1" type="checkbox" />
   <div class="modal-fade-screen">
-    <div class="modal-inner" id="contact-us-modal">
+    <div class="modal-inner">
       <div class="modal-close" for="modal-1"></div>
       <h1>About Us</h1>
       <h4>Develop your skillset while being a positive influence</h4>
       <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" style="height:0px;overflow:hidden;">
+  <label for="modal-2">
+    <div class="modal-trigger" id="program-fees-modal">Click for Modal</div>
+  </label>
+  <input class="modal-state" id="modal-2" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-2"></div>
+      <h1>Program Fees</h1>
+      <h4>Coach Ghana offers a dedicated service to help make your experience as smooth, enjoyable and memorable as possible.</h4>
+      <p>Program Fees do not include flights, insurance, your visa or your vaccinations. We do, however offer full support and guidance when it comes to the process and any questions or concerns you may have.</p>
+
+      <p>Part of your fee will be set aside to invest back into the program and to the local community. Coach Ghana wants to create a lasting legacy in the local community.</p>
+
+      <p>Once you are confirmed on the Coach Ghana program you will receive support from health advice, culture initiation and safety. You will receive a welcome booklet detailing what to know and what to expect.</p>
+
+      <p>Arriving in Ghana you will be picked up on arrival and enjoy a night in Accra where you will be given an initiation to the programme, before heading along the coast to Elmina the following day. Your accommodation plus breakfast and dinner are also included in your program fee.</p>
+
+      <p>You will be given full support during the programme while in Ghana. We will be on hand 24-Hours to provide emergency support. We want to make sure your journey is a memorable one.</p>
+
+      <p>Detailed below are our program fees:</p>
+
+      <div class="stats">
+        <ul>
+          <li>98<span>Items</span></li>
+          <li>298<span>Things</span></li>
+          <li>923<span>Objects</span></li>
+          <li>98<span>More</span></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </div>
