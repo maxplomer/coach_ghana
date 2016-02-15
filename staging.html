@@ -487,7 +487,7 @@ body {
   <input class="modal-state" id="modal-3" type="checkbox" />
   <div class="modal-fade-screen" style="padding-top:40px;">
     <div class="modal-inner" style="max-height:90%">
-      <div class="modal-close" for="modal-3"></div>
+      <div id="close-apply-now-modal" class="modal-close" for="modal-3"></div>
       <h1>Apply now</h1>
       <form id="apply-now-form">
         First Name: (required)<br>
@@ -761,7 +761,7 @@ body {
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
         <br><br>
-        Addresss:<br>
+        Address:<br>
         <textarea name="address" rows="5" style="line-height:150%;"></textarea>
         <br><br>
         Your email: (required)<br>
@@ -971,6 +971,50 @@ $( document ).ready(function() {
 
     alert('Your message has succesfully been sent!');
   });
+
+  $('#apply-now-form').submit(function(e) {
+    e.preventDefault();
+    // Get all the forms elements and their values in one step
+    var values = $(this).serializeJSON();
+    $('#apply-now-form')[0].reset();
+    $('#close-apply-now-modal').trigger('click');
+
+    email_html = 'first name: ' + values["first_name"] + '<br><br>last name: ' + values["last_name"] + '<br><br>gender: ' + values["gender"] + '<br><br>date of birth (DD/MM/YYYY): ' + values["birthday_day"] + '/' + values["birthday_month"] + '/' + values["birthday_year"] + '<br><br>country' + values["country"] + '<br><br>address' + values["address"] + '<br><br>email: ' + values["email"] + '<br><br>phone: ' +  values["phone"] + '<br><br>weeks/price: ' + values["weeks_price"] + '<br><br>terms and conditions: ' + values["terms_and_conditions"];
+
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
+        'message': {
+          'from_email': 'testing@codesandbox.io',
+          'to': [
+              {
+                'email': 'maxplomer@gmail.com',
+                'name': 'Max',
+                'type': 'to'
+              }//,
+              //{
+              //  'email': 'andrew.talty1990@gmail.com',
+              //  'name': 'Andrew',
+              //  'type': 'to'
+              //}
+            ],
+          'autotext': 'true',
+          'subject': 'COACH GHANA apply now form',
+          'html': email_html
+        }
+      }
+    }).done(function(response) {
+     console.log(response); // if you're into that sorta thing
+    });
+
+
+
+    alert('Your message has succesfully been sent!');
+  });
+
+
 });
 </script>
 </body>
