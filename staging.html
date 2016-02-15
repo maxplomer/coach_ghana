@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<title>CoachGhana.co</title>
 <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.js'></script>
 <script type="text/javascript" src="jquery.serializejson.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -769,6 +770,14 @@ body {
         Your Phone:<br>
         <input type="text" name="phone">
         <br><br>
+        Weeks/Price<br>
+        <select name="weeks_price" style="outline:0;">
+          <option value="2 weeks 599 pounds" selected>2 Weeks: &pound;599 British Pound</option>
+          <option value="3 weeks 649 pounds">3 Weeks: &pound;649 British Pound</option>
+          <option value="4 weeks 749 pounds">4 Weeks: &pound;749 British Pound</option>
+        </select>
+        <br><br>
+        <input type="checkbox" name="terms_and_conditions" value="agree" required style="width:20px;"> I agree to the Terms and Conditions<br>
         <div style="width:90%">
           <button type="submit" class="form-send-button">Send</button>
         </div>
