@@ -283,7 +283,7 @@ body {
 }
 
 .datefield input { 
-  width: 1.7em; 
+  width: 2.5em; 
   padding: 0 0.4em; 
   border: none; 
   font-size: 100%; 
@@ -291,7 +291,7 @@ body {
   color: #000;            
 }
 
-.datefield input#year { width:2.5em; }
+.datefield input#year { width:4em; }
 .datefield input:focus { outline:none; }
 
 
@@ -500,6 +500,8 @@ body {
         <input type="radio" name="gender" value="female" required style="width:20px;"> Female
         <br><br>
         Date of Birth: (required)<br>
+        <div style="width:100%;height:12px;">
+        </div>
         <div class="datefield">
           <input name="birthday_day" type="tel" maxlength="2" placeholder="DD" required/> /
           <input name="birthday_month" type="tel" maxlength="2" placeholder="MM" required/> /
