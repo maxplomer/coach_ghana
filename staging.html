@@ -26,7 +26,7 @@ body {
   text-align: center;
 }
 
-#contact-us-form > input, #contact-us-form > textarea {
+#contact-us-form > input, #contact-us-form > textarea, #apply-now-form > input, #apply-now-form > textarea {
   border-radius: 5px;
   border: 1px solid rgb(193,193,193);
   font-size: 16px;
@@ -34,6 +34,17 @@ body {
   outline: 0;
   padding: 10px;
   width: 90%;
+}
+
+.form-send-button {
+  padding: 15px;
+  border-radius: 5px;
+  background: white;
+  font-size: 16px;
+  border: 1px solid rgb(193,193,193);
+  font-family: OpenSans;
+  float: right;
+  outline: 0;
 }
 
 #initial-picture {
@@ -449,8 +460,26 @@ body {
     <div class="modal-inner">
       <div class="modal-close" for="modal-3"></div>
       <h1>Apply now</h1>
-      <h4>Develop your skillset while being a positive influence</h4>
-      <p>Come be a part of this great organization! <br><br> Coach Ghana helps connect travelers to local Ghanaian soccer teams with the best players from across Ghana. Come train with some great players and create a difference in the local community.  <a href="http://news.google.com">Read Coach Ghana's Plan to Help Ghana.</a></p>
+      <form id="apply-now-form">
+        Your Name: (required)<br>
+        <input type="text" name="name" required>
+        <br><br>
+        Your email: (required)<br>
+        <input type="email" name="email" required>
+        <br><br>
+        Your Phone: (required)<br>
+        <input type="text" name="phone" required>
+        <br><br>
+        Subject<br>
+        <input type="text" name="subject">
+        <br><br>
+        Your Message<br>
+        <textarea name="message" rows="5" style="line-height:150%;"></textarea>
+        <br><br>
+        <div style="width:90%">
+          <button type="submit" class="form-send-button">Send</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -481,7 +510,7 @@ body {
         <textarea name="message" rows="5" style="line-height:150%;"></textarea>
         <br><br>
         <div style="width:90%">
-          <button type="submit" style="padding:15px;border-radius:5px;background:white;font-size:16px;border:1px solid rgb(193,193,193);font-family:OpenSans;float:right;outline:0;">Send</button>
+          <button type="submit" class="form-send-button">Send</button>
         </div>
       </form>
 
