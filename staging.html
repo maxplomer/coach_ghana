@@ -267,6 +267,34 @@ body {
   border-color: lightgrey lightgrey transparent transparent;
 }
 
+/* Apply now birthdate field */
+
+.datefield { 
+  display: inline; 
+  padding: 0.3em; 
+  border: inset 1px #CCC; 
+  background: #FFF; 
+  border-radius: 4px;
+  color: #666;
+}
+
+.datefield * { 
+  display: inline-block;
+}
+
+.datefield input { 
+  width: 1.7em; 
+  padding: 0 0.4em; 
+  border: none; 
+  font-size: 100%; 
+  background: none;
+  color: #000;            
+}
+
+.datefield input#year { width:2.5em; }
+.datefield input:focus { outline:none; }
+
+
 </style>
 </head>
 <body>
@@ -456,13 +484,27 @@ body {
     <div class="modal-trigger" id="apply-now-modal">Click for Modal</div>
   </label>
   <input class="modal-state" id="modal-3" type="checkbox" />
-  <div class="modal-fade-screen">
-    <div class="modal-inner">
+  <div class="modal-fade-screen" style="padding-top:40px;">
+    <div class="modal-inner" style="max-height:90%">
       <div class="modal-close" for="modal-3"></div>
       <h1>Apply now</h1>
       <form id="apply-now-form">
-        Your Name: (required)<br>
-        <input type="text" name="name" required>
+        First Name: (required)<br>
+        <input type="text" name="first_name" required>
+        <br><br>
+        Last Name: (required)<br>
+        <input type="text" name="last_name" required>
+        <br><br>
+        Gender: (required)<br>
+        <input type="radio" name="gender" value="male" required style="width:20px;"> Male <br>
+        <input type="radio" name="gender" value="female" required style="width:20px;"> Female
+        <br><br>
+        Date of Birth: (required)<br>
+        <div class="datefield">
+          <input name="birthday_day" type="tel" maxlength="2" placeholder="DD" required/> /
+          <input name="birthday_month" type="tel" maxlength="2" placeholder="MM" required/> /
+          <input id="year" name="birthday_year" type="tel" maxlength="4" placeholder="YYYY" required/>
+        </div>
         <br><br>
         Your email: (required)<br>
         <input type="email" name="email" required>
@@ -529,10 +571,10 @@ $( document ).ready(function() {
 
     // Other options for the map, pretty much selfexplanatory
     var mapOptions = {
-        scrollwheel: false,
-        zoom: 7,
-        center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+      scrollwheel: false,
+      zoom: 7,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
     };
 
     // Attach a map to the DOM Element, with the defined settings
