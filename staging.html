@@ -979,7 +979,7 @@ $( document ).ready(function() {
     $('#apply-now-form')[0].reset();
     $('#close-apply-now-modal').trigger('click');
 
-    email_html = 'first name: ' + values["first_name"] + '<br><br>last name: ' + values["last_name"] + '<br><br>gender: ' + values["gender"] + '<br><br>date of birth (DD/MM/YYYY): ' + values["birthday_day"] + '/' + values["birthday_month"] + '/' + values["birthday_year"] + '<br><br>country' + values["country"] + '<br><br>address' + values["address"] + '<br><br>email: ' + values["email"] + '<br><br>phone: ' +  values["phone"] + '<br><br>weeks/price: ' + values["weeks_price"] + '<br><br>terms and conditions: ' + values["terms_and_conditions"];
+    email_html = 'first name: ' + values["first_name"] + '<br><br>last name: ' + values["last_name"] + '<br><br>gender: ' + values["gender"] + '<br><br>date of birth (DD/MM/YYYY): ' + values["birthday_day"] + '/' + values["birthday_month"] + '/' + values["birthday_year"] + '<br><br>country: ' + values["country"] + '<br><br>address: ' + values["address"] + '<br><br>email: ' + values["email"] + '<br><br>phone: ' +  values["phone"] + '<br><br>weeks/price: ' + values["weeks_price"] + '<br><br>terms and conditions: ' + values["terms_and_conditions"];
 
     $.ajax({
       type: 'POST',
