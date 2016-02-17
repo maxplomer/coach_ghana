@@ -75,10 +75,12 @@ body {
 }
 
 .menu-link {
+  color: rgb(109,109,109);
   cursor: pointer;
   margin-right: 35px;
   text-transform: uppercase;
   letter-spacing: -1px;
+  text-decoration: none;
 }
 
 .menu-link:hover {
