@@ -35,7 +35,7 @@ $( document ).ready(function() {
       data: {
         'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
         'message': {
-          'from_email': 'testing@codesandbox.io',
+          'from_email': 'testing@coachghana.co',
           'to': [
               {
                 'email': email_address,
@@ -120,7 +120,7 @@ $( document ).ready(function() {
       data: {
         'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
         'message': {
-          'from_email': 'testing@codesandbox.io',
+          'from_email': 'testing@coachghana.co',
           'to': [
               {
                 'email': 'maxplomer@gmail.com',
@@ -162,7 +162,7 @@ $( document ).ready(function() {
       data: {
         'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
         'message': {
-          'from_email': 'testing@codesandbox.io',
+          'from_email': 'testing@coachghana.co',
           'to': [
               {
                 'email': 'maxplomer@gmail.com',
