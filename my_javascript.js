@@ -28,31 +28,6 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
   }, 2200);
 
-  window.send_test_email = function(email_address) {
-    $.ajax({
-      type: 'POST',
-      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-      data: {
-        'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
-        'message': {
-          'from_email': 'testing@coachghana.co',
-          'to': [
-              {
-                'email': email_address,
-                'name': 'Max',
-                'type': 'to'
-              }
-            ],
-          'autotext': 'true',
-          'subject': 'YOUR SUBJECT HERE!',
-          'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
-        }
-      }
-     }).done(function(response) {
-       console.log(response); // if you're into that sorta thing
-     });
-  };
-
   function fadeInElement(elementToFade) {
     var elementTopToPageTop = $(elementToFade).offset().top;
     var windowTopToPageTop = $(window).scrollTop();
@@ -126,12 +101,12 @@ $( document ).ready(function() {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
                 'type': 'to'
-              },
-              {
-                'email': 'andrew.talty1990@gmail.com',
-                'name': 'Andrew',
-                'type': 'to'
-              }
+              }//,
+              // {
+              //   'email': 'andrew.talty1990@gmail.com',
+              //   'name': 'Andrew',
+              //   'type': 'to'
+              // }
             ],
           'autotext': 'true',
           'subject': 'COACH GHANA contact us form',
@@ -168,12 +143,12 @@ $( document ).ready(function() {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
                 'type': 'to'
-              },
-              {
-                'email': 'andrew.talty1990@gmail.com',
-                'name': 'Andrew',
-                'type': 'to'
-              }
+              }//,
+              // {
+              //   'email': 'andrew.talty1990@gmail.com',
+              //   'name': 'Andrew',
+              //   'type': 'to'
+              // }
             ],
           'autotext': 'true',
           'subject': 'COACH GHANA apply now form',
