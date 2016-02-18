@@ -17,14 +17,26 @@ form, label {
   @include outer-container();
 }
 
-.apply_now_pic, .normal_nav {
+.apply_now_pic {
   @include media(min-width 320px max-width 480px, 6) {
     display: none;
   }
 }
 
-.picture_up_top, header {
+.normal_nav {
+  @include media(min-width 320px max-width 580px, 6) {
+    display: none;
+  }
+}
+
+.picture_up_top {
   @include media(480px) {
+    display: none;
+  }
+}
+
+header {
+  @include media(580px) {
     display: none;
   }
 }
