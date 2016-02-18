@@ -23,7 +23,7 @@ form, label {
   }
 }
 
-.normal_nav {
+.normal_nav, .sub-logo {
   @include media(min-width 320px max-width 580px, 6) {
     display: none;
   }

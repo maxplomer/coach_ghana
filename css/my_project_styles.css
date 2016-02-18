@@ -29,7 +29,7 @@ form, label {
     display: none; } }
 
 @media screen and (min-width: 320px) and (max-width: 580px) {
-  .normal_nav {
+  .normal_nav, .sub-logo {
     display: none; } }
 
 @media screen and (min-width: 480px) {
