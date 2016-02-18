@@ -31,6 +31,11 @@ $( document ).ready(function() {
   setTimeout(function(){ $( "#initial-picture" ).fadeTo( "slow", 1 );
   }, 2200);
 
+
+  setTimeout(function(){ $( ".sub-logo-mobile" ).fadeTo( "slow", 1 );
+  }, 2200);
+  
+
   setTimeout(function(){ $( "#second-section" ).fadeTo( "slow", 1 );
   }, 2200);
 
