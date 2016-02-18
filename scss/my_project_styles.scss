@@ -17,9 +17,24 @@ form, label {
   @include outer-container();
 }
 
+.apply_now_pic {
+  @include media(min-width 320px max-width 480px, 6) {
+    display: none;
+  }
+}
+
+.picture_up_top {
+  @include media(480px) {
+    display: none;
+  }
+}
+
 .picture_on_the_left {
   @include span-columns(3);
   @include pad();
+  @include media(min-width 320px max-width 480px, 6) {
+    display: none;
+  }
 }
 
 .image-gradient-dynamic {
