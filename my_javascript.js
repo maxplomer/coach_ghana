@@ -95,7 +95,7 @@ $( document ).ready(function() {
       data: {
         'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
         'message': {
-          'from_email': 'testing@coachghana.co',
+          'from_email': 'no-reply@coachghana.co',
           'to': [
               {
                 'email': 'maxplomer@gmail.com',
@@ -103,8 +103,8 @@ $( document ).ready(function() {
                 'type': 'to'
               },
               {
-                'email': 'andrew.talty1990@gmail.com',
-                'name': 'Andrew',
+                'email': 'info@coachghana.co',
+                'name': 'Coach Ghana',
                 'type': 'to'
               }
             ],
@@ -137,7 +137,7 @@ $( document ).ready(function() {
       data: {
         'key': 'zxQ7fxB2xCeYLCrdVs8lKg',
         'message': {
-          'from_email': 'testing@coachghana.co',
+          'from_email': 'no-reply@coachghana.co',
           'to': [
               {
                 'email': 'maxplomer@gmail.com',
@@ -145,8 +145,8 @@ $( document ).ready(function() {
                 'type': 'to'
               },
               {
-                'email': 'andrew.talty1990@gmail.com',
-                'name': 'Andrew',
+                'email': 'info@coachghana.co',
+                'name': 'Coach Ghana',
                 'type': 'to'
               }
             ],
