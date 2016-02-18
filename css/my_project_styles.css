@@ -23,6 +23,15 @@ form, label {
     content: "";
     display: table; }
 
+.picture_on_the_left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding: 2.35765%; }
+  .picture_on_the_left:last-child {
+    margin-right: 0; }
+
 .image-gradient-dynamic {
   line-height: 0;
   position: relative;

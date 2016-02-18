@@ -17,6 +17,11 @@ form, label {
   @include outer-container();
 }
 
+.picture_on_the_left {
+  @include span-columns(3);
+  @include pad();
+}
+
 .image-gradient-dynamic {
   $image-gradient-color-top: red; 
   $transparency-top: 0.9;
