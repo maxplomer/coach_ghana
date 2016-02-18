@@ -29,7 +29,7 @@ form, label {
     display: none; } }
 
 @media screen and (min-width: 480px) {
-  .picture_up_top {
+  .picture_up_top, header {
     display: none; } }
 
 .picture_on_the_left {

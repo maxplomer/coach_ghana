@@ -23,7 +23,7 @@ form, label {
   }
 }
 
-.picture_up_top {
+.picture_up_top, header {
   @include media(480px) {
     display: none;
   }
