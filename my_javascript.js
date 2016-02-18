@@ -16,8 +16,11 @@ $( document ).ready(function() {
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   }
 
-  setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
-  }, 2100);
+  if (location.pathname.split('/').slice(-1)[0] == 'staging.html') {
+    setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
+    }, 2100);  
+  };
+
 
   setTimeout(function(){ $( "#big-title" ).fadeTo( "slow", 1 );
   }, 2000);
@@ -176,6 +179,7 @@ $( document ).ready(function() {
       }
     });
   });
+
 
 
 
