@@ -37,6 +37,15 @@ form, label {
   }
 }
 
+#apply-now-form { 
+  @include media(480px) {
+    width: 50%;
+  }
+  @include media(min-width 320px max-width 480px, 6) {
+    width: 80%;
+  }
+}
+
 .image-gradient-dynamic {
   $image-gradient-color-top: red; 
   $transparency-top: 0.9;

@@ -43,6 +43,13 @@ form, label {
     .picture_on_the_left {
       display: none; } }
 
+@media screen and (min-width: 480px) {
+  #apply-now-form {
+    width: 50%; } }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #apply-now-form {
+    width: 80%; } }
+
 .image-gradient-dynamic {
   line-height: 0;
   position: relative;
