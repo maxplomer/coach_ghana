@@ -16,9 +16,12 @@ $( document ).ready(function() {
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   }
 
-  if (location.pathname.split('/').slice(-1)[0] == 'staging.html') {
+  if (location.pathname.split('/').slice(-1)[0] == 'staging.html' && $(window).width() > 580) {
     setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
     }, 2100);  
+  } else {
+    //$( "#top-right-menu" ).hide();
+    $( "#top-right-menu" ).css('opacity', 1);
   };
 
 
