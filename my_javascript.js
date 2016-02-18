@@ -101,12 +101,12 @@ $( document ).ready(function() {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
                 'type': 'to'
-              }//,
-              // {
-              //   'email': 'andrew.talty1990@gmail.com',
-              //   'name': 'Andrew',
-              //   'type': 'to'
-              // }
+              },
+              {
+                'email': 'andrew.talty1990@gmail.com',
+                'name': 'Andrew',
+                'type': 'to'
+              }
             ],
           'autotext': 'true',
           'subject': 'COACH GHANA contact us form',
@@ -143,12 +143,12 @@ $( document ).ready(function() {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
                 'type': 'to'
-              }//,
-              // {
-              //   'email': 'andrew.talty1990@gmail.com',
-              //   'name': 'Andrew',
-              //   'type': 'to'
-              // }
+              },
+              {
+                'email': 'andrew.talty1990@gmail.com',
+                'name': 'Andrew',
+                'type': 'to'
+              }
             ],
           'autotext': 'true',
           'subject': 'COACH GHANA apply now form',
