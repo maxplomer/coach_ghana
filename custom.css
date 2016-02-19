@@ -145,6 +145,14 @@ body {
   transform:scale(0.8,0.8); /* W3C */
 }
 
+.shrink-slogan2 {
+  -webkit-transform:scale(0.8,0.8); /* Safari and Chrome */
+  -moz-transform:scale(0.8,0.8); /* Firefox */
+  -ms-transform:scale(0.8,0.8); /* IE 9 */
+  -o-transform:scale(0.8,0.8); /* Opera */
+  transform:scale(0.8,0.8); /* W3C */
+}
+
 .animation-target {
   -webkit-animation: animation 3000ms linear both;
   animation: animation 3000ms linear both;
