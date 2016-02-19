@@ -23,6 +23,12 @@ form, label {
   }
 }
 
+#big-title {
+  @include media(min-width 0px max-width 480px, 6) {
+    font-size:46px !important;
+  }
+}
+
 .normal_nav, .sub-logo {
   @include media(min-width 0px max-width 580px, 6) {
     display: none;
