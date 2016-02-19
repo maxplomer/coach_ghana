@@ -6,6 +6,7 @@ $( document ).ready(function() {
 
     // Other options for the map, pretty much selfexplanatory
     var mapOptions = {
+      draggable: !("ontouchend" in document),
       scrollwheel: false,
       zoom: 7,
       center: myLatlng,
