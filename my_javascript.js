@@ -20,12 +20,13 @@ $( document ).ready(function() {
   if (location.pathname.split('/').slice(-1)[0] == 'staging.html' && $(window).width() > 580) {
     setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
     }, 2100);  
-    setTimeout(function(){ $( "#sub-logo-mobile" ).fadeTo( "slow", 1 );
-    }, 2100);  
+    $( "#sub-logo-mobile" ).css('opacity', 1);
   } else {
     //$( "#top-right-menu" ).hide();
     $( "#top-right-menu" ).css('opacity', 1);
-    $( "#sub-logo-mobile" ).css('opacity', 1);
+
+    setTimeout(function(){ $( "#sub-logo-mobile" ).fadeTo( "slow", 1 );
+    }, 2100);
   };
 
 
