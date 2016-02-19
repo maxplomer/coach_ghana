@@ -47,6 +47,12 @@ header {
   }
 }
 
+#sub-logo-mobile {
+  @include media(580px) {
+    display: none;
+  }
+}
+
 .picture_on_the_left {
   @include span-columns(3);
   @include pad();
