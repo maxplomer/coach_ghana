@@ -187,8 +187,8 @@ $( document ).ready(function() {
       }
     });
   });
-});
 
-$( window ).resize(function() {
-  alert($( "#main-container" ).height());
+
+
+
 });
