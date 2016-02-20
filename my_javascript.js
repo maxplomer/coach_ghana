@@ -187,15 +187,8 @@ $( document ).ready(function() {
       }
     });
   });
-
-  setTimeout(function(){ 
-    $( "#main-bg-image" ).css('height', $( "#main-container" ).height() - 20 );
-    $( "#main-bg-image" ).css('opacity', 0.15);
-  }, 1);
-
-  
 });
 
 $( window ).resize(function() {
-  $( "#main-bg-image" ).css('height', $( "#main-container" ).height() - 20 );
+  alert($( "#main-container" ).height());
 });
