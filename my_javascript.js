@@ -149,11 +149,6 @@ $( document ).ready(function() {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
                 'type': 'to'
-              },
-              {
-                'email': 'info@coachghana.co',
-                'name': 'Coach Ghana',
-                'type': 'to'
               }
             ],
           'autotext': 'true',
