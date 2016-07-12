@@ -17,7 +17,7 @@ $( document ).ready(function() {
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   }
 
-  if (location.pathname.split('/').slice(-1)[0] == 'staging.html' && $(window).width() > 580) {
+  if (location.pathname.split('/').slice(-1)[0] == 'index.html' && $(window).width() > 580) {
     setTimeout(function(){ $( "#top-right-menu" ).fadeTo( "slow", 1 );
     }, 2100);  
     $( "#sub-logo-mobile" ).css('opacity', 1);
@@ -111,11 +111,6 @@ $( document ).ready(function() {
               {
                 'email': 'maxplomer@gmail.com',
                 'name': 'Max',
-                'type': 'to'
-              },
-              {
-                'email': 'info@coachghana.co',
-                'name': 'Coach Ghana',
                 'type': 'to'
               }
             ],
